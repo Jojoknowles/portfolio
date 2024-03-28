@@ -1,4 +1,4 @@
-@media only screen and (min-width: 750px) {
+
 .text{
 	position: absolute;
 	font-size: 16px;
@@ -19,32 +19,6 @@
 	right:400px;
 	top:250px;
 	text-align: center;
-	font-size: 16px;
-	line-height: 24px;
-	color:olivedrab;
-}
-}
-
-.about_text{
-	position: absolute;
-	left: 50px;
-	right:50px;
-	top:250px;
-	text-align: center;
-	font-size: 16px;
-	line-height: 24px;
-	color:olivedrab;
-}
-
-.text{
-	position: absolute;
-	font-size: 14px;
-	left:20px;
-	right: 20px;
-	top:400px;
-	line-height: 24px;
-}
-.titles{
 	font-size: 16px;
 	line-height: 24px;
 	color:olivedrab;
