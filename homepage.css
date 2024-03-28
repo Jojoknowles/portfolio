@@ -4,6 +4,53 @@ body{
   	font-style: normal;
   	background-color: #faf8ed;
 }
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  body {
+    #table{
+	height:350px;
+	width: auto;
+}
+#gum{
+	height:400px;
+	width:auto;
+}
+#pillow{
+	width:400px;
+	height:auto;
+}
+#spit{
+	height:250px;
+	width:auto;
+}
+#toothbrush{
+	height:700px;
+	width:auto;
+}
+#bathtub{
+	width:30%;
+	height:auto;
+}
+#foot{
+	height:300px;
+	width:auto;
+}
+#midsummer{
+	height:600px;
+	width:auto;
+}
+#deadpigeon{
+	height: 250px;
+	width:auto;
+}
+#reddog{
+	height: 350px;
+	width: auto;
+}
+
+  }
+
 .class {
 	width: 100%;
 }
@@ -79,6 +126,10 @@ body{
 	top: 1100px;
 	left: 0px;
 }
+}
+}
+
+
 .title{
 	position: relative;
   	left:1000px;
