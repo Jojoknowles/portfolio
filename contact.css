@@ -1,9 +1,11 @@
+
 body{
 	font-family: "Inter", sans-serif;
 	font-weight: 300;
   	font-style: normal;
   	background-color: #faf8ed;
 }
+@media only screen and (min-width: 750px) {
 .text{
 	position: absolute;
 	font-size: 18px;
@@ -11,4 +13,12 @@ body{
 	right:800px;
 	color:olivedrab;
 }
+}
 
+.text{
+	position: absolute;
+	font-size: 18px;
+	top:300px;
+	right:30px;
+	color:olivedrab;
+}
