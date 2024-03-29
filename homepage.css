@@ -5,82 +5,50 @@ body{
   	background-color: #faf8ed;
 }
 
-@media only screen and (min-width: 600px) {
-.class {
-	width: 100%;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-#table{
-	height:350px;
-	width: auto;
-	position: relative;
-  	left:400px;
-  	bottom:250px;
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
-#gum{
-	height:400px;
-	width:auto;
-	position: relative;
-  	left:400px;
-  	top:950px;
-}
-#pillow{
-	width:400px;
-	height:auto;
-	position: relative;
-  	left: 200px;
-  	top: 20px;
-}
-#spit{
-	height:250px;
-	width:auto;
-	position: relative;
-  	right: 800px;
-  	top:20px;
-}
-#toothbrush{
-	height:700px;
-	width:auto;
-	position: relative;
-  	right:900px;
-  	top:800px;
-}
-#bathtub{
-	width:30%;
-	height:auto;
-	position: relative;
-  	left:600px;
-  	bottom: 150px;
-}
-#foot{
-	height:300px;
-	width:auto;
-	position: relative;
-  	right: 300px;
-  	top: 700px;
 
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
-#midsummer{
-	height:600px;
-	width:auto;
-	position: relative;
-  	right: 200px;
-  	top:1000px;
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
-#deadpigeon{
-	height: 250px;
-	width:auto;
-	position: relative;
-	bottom: 150px;
-	left: 1100px;
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
-#reddog{
-	height: 350px;
-	width: auto;
-	position: relative;
-	top: 1100px;
-	left: 0px;
-}
+
+
+
+
+
+
+
+
+
 
 .title{
 	position: relative;

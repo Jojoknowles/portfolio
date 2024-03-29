@@ -61,10 +61,32 @@ a{
 }
 
 .paragraph {
-	width: 350px;
+	width: 23vw;
 	position: absolute;
-	padding-left: 1090px;
-	top: 350px;
-	text-align: justify;
-	line-height: 20px;
+	padding-left: 73%;
+  padding-right: 10%;
+	top: 40%;
+	text-align: left;
+	line-height: 22px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .paragraph{
+    width: 100%;
+    position: relative;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+.menu-container,.menu-links,.menu-title{
+    width: 100%;
+    position: relative;
+    align-content: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-size: 5vw;
+    top: 20%;
+    left: 0%;
+    right: 0%;
+  }
 }

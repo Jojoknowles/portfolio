@@ -8,15 +8,16 @@ body{
 .text{
 	position: absolute;
 	font-size: 18px;
-	top:400px;
-	right:800px;
+	top:55%;
+	right:50%;
 	color:olivedrab;
 }
-}
-
-.text{
-	position: absolute;
-	font-size: 18px;
-	top:300px;
-	right:30px;
+@media screen and (max-width: 800px) {
+	.text { position: absolute;
+	font-size: 5vw;
+	top:55%;
+	right: 5%;
+	left: 5%;
 	color:olivedrab;
+	}
+}
