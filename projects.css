@@ -71,12 +71,44 @@ a{
 }
 
  @media only screen and (min-width: 801px) {
+/* Create two unequal columns that floats next to each other */
+.dentist1{
+  width: 100%;
+}
+.dentist2{
+  width: 100%;
+}
+.dentist3{
+  width:100%;
+}
+.dentist4{
+  width: 100%;
+}
+.column {
+  float: left;
+}
+.left {
+  width: 40%;
+  padding-right: 0.4%;
+}
+.right {
+  width: 30%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
   img{
     width:70%;
   }
   .video{
     width: 70%;
   }
+
+  
 }
 
 
