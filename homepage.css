@@ -110,12 +110,15 @@ a {text-decoration: none; }
 }
 }
 
-
 #toothbrush{
 	height:auto;
 	width:90vh;
 	}
 
+#thesiscover{
+height: auto;
+	width: 80vh;
+}
 
 
 	.title{
