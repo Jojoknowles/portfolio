@@ -137,3 +137,12 @@ a{
     width: 100%;
   }
 }
+
+.coming-soon{
+  position: absolute;
+  padding-right: 0vw;
+  padding-left: 40vw;
+  padding-top: 20vw;
+  text-align: center;
+  color: olivedrab;
+}
