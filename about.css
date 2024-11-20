@@ -4,7 +4,7 @@
 	font-size: 16px;
 	left:20%;
 	right: 20%;
-	top:50%;
+	top:65%;
 	line-height: 24px;
 }
 
@@ -23,4 +23,16 @@
 	font-size: 16px;
 	line-height: 24px;
 	color:olivedrab;
+}
+
+.bio{
+	position: absolute;
+	left: 20%;
+	right:20%;
+	top:42%;
+	text-align: justify;
+	font-size: 14px;
+	line-height: 24px;
+	color:darkolivegreen;
+
 }
