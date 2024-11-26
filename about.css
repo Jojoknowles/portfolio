@@ -1,4 +1,59 @@
 
+@media screen and (max-width: 800px) {
+  .paragraph{
+    width: 100%;
+    position: relative;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+.menu-container,.menu-links,.menu-title{
+    width: 100%;
+    position: relative;
+    align-content: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-size: 5vw;
+    top: 20%;
+    left: 0%;
+    right: 0%;
+  }
+  img{
+    width: 100%;
+  }
+  .video{
+    width: 100%;
+  }
+  .about_text{
+  	position: relative;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+  }
+  
+  .bio{
+    position: relative;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 15%;
+  }
+  .text{
+  	position: relative;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 105%;
+  }
+
+}
+
+.coming-soon{
+  position: absolute;
+  padding-right: 0vw;
+  padding-left: 40vw;
+  padding-top: 20vw;
+  text-align: center;
+  color: olivedrab;
+}
+
 .text{
 	position: absolute;
 	font-size: 16px;

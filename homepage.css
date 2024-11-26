@@ -115,12 +115,15 @@ a {text-decoration: none; }
 	width:90vh;
 	}
 
-#thesiscover{
+#thesiscover-min{
 height: auto;
-	width: 80vh;
+	width: 90vh;
 }
 
-
+#croissant{
+  height:auto;
+  width: 40vh;
+}
 	.title{
 	position: absolute;
   	text-align: center;
