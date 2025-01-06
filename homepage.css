@@ -106,6 +106,7 @@ a {text-decoration: none; }
 }
 }
 
+
 #toothbrush{
 	height:auto;
 	width:90vh;
@@ -113,12 +114,24 @@ a {text-decoration: none; }
 
 #thesiscover-min{
 height: auto;
-	width: 90vh;
+	width: 70vh;
+}
+
+#spit{
+  height: auto;
+  width: 35vh;
+  padding-left: 15vh;
 }
 
 #croissant{
   height:auto;
   width: 40vh;
+}
+
+#gum{
+  height:auto;
+  width:35vh;
+  padding-left: 10vh;
 }
 	.title{
 	position: absolute;
