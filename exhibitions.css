@@ -3,10 +3,10 @@ html, body {
     overflow-x: hidden;
 }
 body{
-	font-family: "Inter", sans-serif;
-	font-weight: 300;
-  	font-style: normal;
-  	background-color: #faf8ed;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+    font-style: normal;
+    background-color: #faf8ed;
 }
 ul.expo-links{
   font-family: "Poppins", serif;
@@ -15,15 +15,15 @@ ul.expo-links{
 }
 
 .title{
-	position: relative;
-  	left:1000px;
-  	top:20px;
+  position: relative;
+    left:1000px;
+    top:20px;
 }
 .about{
-	font-size: 14px;
-	position: relative;
-  	left:1100px;
-  	top:50px;
+  font-size: 14px;
+  position: relative;
+    left:1100px;
+    top:50px;
 }
 .menu-container {
   position: absolute;
@@ -84,9 +84,10 @@ ul.expo-links{
   list-style-type: none;
   width: 50vw;
   position: absolute;
-  padding-left: 30%;
+  align-content: center;
+  padding-left: 25%;
   padding-right: 30%;
-  top: 30%;
+  top: 40%;
   text-align: left;
   line-height: 22px;
   font-size: 18px;
@@ -95,29 +96,80 @@ ul.expo-links{
 
 
 .paragraph {
-	width: 23vw;
-	position: absolute;
-	padding-left: 73%;
+  width: 30vw;
+  position: absolute;
+  padding-left: 55%;
   padding-right: 10%;
-	top: 40%;
-	text-align: left;
-	line-height: 22px;
+  top: 40%;
+  text-align: left;
+  line-height: 22px;
 }
+.paragraph-view {
+  width: 20vw;
+  position: absolute;
+  padding-left: 75%;
+  padding-right: 10%;
+  top: 40%;
+  text-align: left;
+  line-height: 22px;
+}
+
+.paragraph-melkweg {
+  width: 20vw;
+  position: absolute;
+  padding-left: 77%;
+  padding-right: 10%;
+  top: 40%;
+  text-align: left;
+  line-height: 22px;
+}
+
+.melkweg1{
+  width: 75%;
+}
+.melkweg2{
+  width: 75%;
+}
+.melkweg3{
+  width: 75%;
+}
+.melkweg4{
+  width: 75%;
+}
+.melkweg5{
+  width: 75%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 35%;
+  max-width: 35%;
+  padding: 0 4px;
+  font-size: 11px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 
  @media only screen and (min-width: 801px) {
 /* Create two unequal columns that floats next to each other */
-.dentist1{
-  width: 100%;
-}
-.dentist2{
-  width: 100%;
-}
-.dentist3{
-  width:100%;
-}
-.dentist4{
-  width: 100%;
-}
 .column {
   float: left;
 }
@@ -136,13 +188,11 @@ ul.expo-links{
 }
 
   img{
-    width:70%;
+    width:50%;
   }
   .video{
     width: 70%;
   }
-
-  
 }
 
 
@@ -153,7 +203,21 @@ ul.expo-links{
     padding-left: 0%;
     padding-right: 0%;
   }
-.menu-container,.menu-links,.menu-title,ul.expo-links{
+    .paragraph-view{
+    width: 100%;
+    position: relative;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+.paragraph-melkweg{
+    width: 100%;
+    position: relative;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+.menu-container,.menu-links,.menu-title{
     width: 100%;
     position: relative;
     align-content: center;
@@ -163,6 +227,30 @@ ul.expo-links{
     top: 20%;
     left: 0%;
     right: 0%;
+  }
+
+  ul.expo-links{
+    position: relative;
+    width: 70%;
+    align-content: center;
+    padding-top: 7%;
+    padding-left: 10%;
+  }
+
+  .melkweg1{
+    width: 100%;
+  }
+  .melkweg2{
+    width: 100%;
+  }
+  .melkweg3{
+    width: 100%;
+  }
+  .melkweg4{
+    width: 100%;
+  }
+  .melkweg5{
+    width: 100%;
   }
   img{
     width: 100%;
