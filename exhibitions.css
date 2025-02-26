@@ -87,7 +87,7 @@ ul.expo-links{
   align-content: center;
   padding-left: 25%;
   padding-right: 30%;
-  top: 40%;
+  top: 30%;
   text-align: left;
   line-height: 22px;
   font-size: 18px;
@@ -124,6 +124,16 @@ ul.expo-links{
   line-height: 22px;
 }
 
+.paragraph-bunker{
+  width: 20vw;
+  position: absolute;
+  padding-left: 73%;
+  padding-right: 10%;
+  top: 40%;
+  text-align: left;
+  line-height: 22px;
+}
+
 .melkweg1{
   width: 75%;
 }
@@ -140,10 +150,54 @@ ul.expo-links{
   width: 75%;
 }
 
+.gunk1{
+  width: 70%;
+}
+.gunk2{
+  width: 40%;
+}
+.gunk3{
+  width: 40%}
+
+.gunk4{
+  width: 40%;
+  padding-left: 10%;
+}
+
+.gunk7{
+  width: 100%;
+}
+
+.gunk5{
+  padding-left: 20%;
+}
+
+.gunk6{
+  width: 40%;
+}
+.gunk8{
+  width: 36%;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+}
+.gunk9{
+  width: 70%;
+}
+.gunk10{
+  width: 70%;
+}
+.gunk11{
+  width: 70%;
+}
+.gunk12{
+  width: 70%;
+}
+.gunk13{
+  width: 100%;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -217,6 +271,13 @@ ul.expo-links{
     padding-right: 0%;
   }
 
+  .paragraph-bunker{
+    width: 100%;
+    position: relative;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
 .menu-container,.menu-links,.menu-title{
     width: 100%;
     position: relative;
@@ -252,6 +313,50 @@ ul.expo-links{
   .melkweg5{
     width: 100%;
   }
+.gunk1{
+  width: 100%;
+}
+.gunk2{
+  width: 100%;
+}
+.gunk3{
+  width: 100%}
+
+.gunk4{
+  width: 100%;
+}
+
+.gunk7{
+  width: 100%;
+}
+
+.gunk5{
+  width: 100%;
+}
+
+.gunk6{
+  width: 100%;
+}
+.gunk8{
+  width: 100%;
+}
+
+.gunk9{
+  width: 100%;
+}
+.gunk10{
+  width: 100%;
+}
+.gunk11{
+  width: 100%;
+}
+.gunk12{
+  width: 100%;
+}
+.gunk13{
+  width: 100%;
+}
+
   img{
     width: 100%;
   }
@@ -259,7 +364,11 @@ ul.expo-links{
     width: 100%;
   }
 }
-
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
 .coming-soon{
   position: absolute;
   padding-right: 0vw;
@@ -267,4 +376,5 @@ ul.expo-links{
   padding-top: 20vw;
   text-align: center;
   color: olivedrab;
+}
 }
