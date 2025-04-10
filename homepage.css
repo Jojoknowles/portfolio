@@ -129,6 +129,12 @@ height: auto;
   width: 40vh;
 }
 
+#onion{
+  height: auto;
+  width: 30vh;
+  padding-left: 15vh;
+}
+
 #gum{
   height:auto;
   width:35vh;
