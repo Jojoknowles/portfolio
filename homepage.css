@@ -1,3 +1,6 @@
+.menu-title{
+  font-weight: 300;
+}
 
 html, body {
     max-width: 100%;
@@ -96,6 +99,14 @@ body{
 /*  background-color: #ddd;*/
 }
 
+
+#fish1{
+  position: absolute;
+  padding-left: 73vh;
+  padding-top: 9vh;
+  width: 33%;
+}
+
 img{
 	width: 30%;
 }
@@ -140,6 +151,8 @@ height: auto;
   width:35vh;
   padding-left: 10vh;
 }
+
+
 	.title{
 	position: absolute;
   	text-align: center;
