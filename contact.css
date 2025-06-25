@@ -14,6 +14,7 @@ body{
 	right:50%;
 	color:olivedrab;
 }
+
 @media screen and (max-width: 800px) {
 	.text { position: absolute;
 	font-size: 5vw;
