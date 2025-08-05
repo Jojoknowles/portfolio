@@ -63,9 +63,13 @@ ul.expo-links{
   color: #333;
   text-decoration: none;
 }
+
 .menu-links a:hover {
 /*  background-color: #ddd;*/
 }
+
+
+
 a{
   color:black;
   text-decoration: none;
@@ -87,11 +91,11 @@ ul.nd-link{
 ul.expo-links{
   list-style-type: none;
   width: 50vw;
-  position: absolute;
+  position: relative;
   align-content: center;
   padding-left: 25%;
   padding-right: 30%;
-  top: 30%;
+  top: 40%;
   text-align: left;
   line-height: 22px;
   font-size: 18px;
@@ -282,24 +286,21 @@ ul.expo-links{
     padding-right: 0%;
   }
 
-.menu-container,.menu-links,.menu-title{
-    width: 100%;
+.menu-container{
     position: relative;
     align-content: center;
     padding-left: 0%;
     padding-right: 0%;
-    font-size: 5vw;
-    top: 20%;
-    left: 0%;
-    right: 0%;
   }
 
   ul.expo-links{
     position: relative;
+    top: auto;
+    margin-top: 100px;
     width: 70%;
     align-content: center;
-    padding-top: 7%;
     padding-left: 10%;
+    margin-bottom: 100px;
   }
 
   .melkweg1{

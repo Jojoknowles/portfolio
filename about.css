@@ -4,53 +4,95 @@
 b, strong {
   font-weight: 700;
 }
+.title{
+  position: relative;
+    left:1000px;
+    top:20px;
+}
 
+.menu-container {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: #fff;
+  padding: 10px;
+  background:rgba(0,0,0,0);
+}
+
+.menu-title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 2rem; /* Increased font size */
+  text-align: right; /* Align title to the right edge */
+  color: black;
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right; /* Align links to the right edge */
+}
+
+.menu-links li {
+  margin-bottom: 5px;
+}
+
+.menu-links a {
+  display: block;
+  padding: 2.5px 2.5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-links a:hover {
+/*  background-color: #ddd;*/
+}
+.about-wrapper {
+  pointer-events: none;
+}
+#fish1{
+  position: absolute;
+  padding-left: 73vh;
+  padding-top: 9vh;
+  width: 33%;
+}
 
 @media screen and (max-width: 800px) {
+.about-wrapper {
+  pointer-events: none;
+}
+#fish1{
+  position: absolute;
+  padding-left: 18%;
+  padding-top: 70%;
+  width: 63%;
+}
+
   .paragraph{
     width: 100%;
     position: relative;
     padding-left: 0%;
     padding-right: 0%;
   }
-.menu-container,.menu-links,.menu-title{
-    width: 100%;
-    position: relative;
-    align-content: center;
-    padding-left: 0%;
-    padding-right: 0%;
-    font-size: 5vw;
-    top: 20%;
-    left: 0%;
-    right: 0%;
-  }
-  img{
-    width: 100%;
-  }
-  .video{
-    width: 100%;
-  }
-  .about_text{
-  	position: relative;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 0%;
-  }
+
   
   .bio{
-    position: relative;
+    position: absolute;
     padding-left: 0%;
     padding-right: 0%;
-    padding-top: 0%;
+    padding-top: 30%;
   }
   .text{
-  	position: relative;
+  	position: absolute;
     padding-left: 0%;
     padding-right: 0%;
-    padding-top: 120%;
+    padding-top: 130%;
   }
 
 }
+
+
 
 .coming-soon{
   position: absolute;
