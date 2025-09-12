@@ -94,9 +94,9 @@ ul.expo-links{
   width: 50vw;
   position: relative;
   align-content: center;
-  padding-left: 25%;
-  padding-right: 30%;
-  top: 40%;
+  padding-left: 400px;
+  padding-right: 0px;
+  padding-top: 50px;
   text-align: left;
   line-height: 22px;
   font-size: 18px;
