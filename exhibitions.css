@@ -1,37 +1,46 @@
-.menu-title{
-  font-weight: 300;
-}
+/* === GLOBAL STYLES === */
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
-body{
-   font-family: "Tinos", serif;
+
+body {
+  font-family: "Tinos", serif;
   font-weight: 400;
   font-style: normal;
   background-color: #faf8ed;
 }
 
-ul.expo-links{
-   font-family: "Tinos", serif;
-  font-weight: 400;
-  font-style: italic;
-  background-color: #faf8ed;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-.title{
-  position: relative;
-    left:1000px;
-    top:20px;
+/* === TITLES & TEXT === */
+.menu-title {
+  font-weight: 300;
+  margin: 0 0 50px;
+  font-size: 2rem;
+  text-align: right;
+  color: black;
 }
-.about{
+
+.title {
+  position: relative;
+  left: 1000px;
+  top: 20px;
+}
+
+.about {
   font-size: 14px;
   position: relative;
-    left:1100px;
-    top:50px;
+  left: 1100px;
+  top: 50px;
 }
+
+/* === MENU === */
 .menu-container {
-  position: relative;
+  position: absolute;
   top: 50px;
   right: 50px;
   background-color: #fff;
@@ -39,19 +48,13 @@ ul.expo-links{
   background:rgba(0,0,0,0);
 }
 
-.menu-title {
-  margin: 0;
-  margin-bottom: 50px;
-  font-size: 2rem; /* Increased font size */
-  text-align: right; /* Align title to the right edge */
-  color: black;
-}
-
 .menu-links {
+  position: relative;
+  z-index: 1; /* makes sure newsletter sits on top */
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: right; /* Align links to the right edge */
+  text-align: right;
 }
 
 .menu-links li {
@@ -66,163 +69,118 @@ ul.expo-links{
 }
 
 .menu-links a:hover {
-/*  background-color: #ddd;*/
+  /* background-color: #ddd; */
 }
 
-
-
-a{
-  color:black;
-  text-decoration: none;
-}
-
-ul.nd-link{
+/* === LISTS === */
+ul.nd-link,
+ul.expo-links {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.nd-link li{
-  list-style-type: none;
-}
+
 .nd-link a {
-  color:darkred;
+  color: darkred;
   text-decoration: none;
 }
 
-ul.expo-links{
-  list-style-type: none;
+ul.expo-links {
   width: 50vw;
-  position: relative;
-  align-content: center;
-  padding-left: 400px;
-  padding-right: 0px;
-  padding-top: 50px;
+  padding-left: 30vw;
+  padding-top: 18vw;
   text-align: left;
   line-height: 22px;
   font-size: 18px;
+
+  position: relative;
+  z-index: 0; /* ensures it stays behind newsletter if they overlap */
 }
 
-
+/* === PARAGRAPHS === */
+.paragraph,
+.paragraph-view,
+.paragraph-melkweg,
+.paragraph-bunker {
+  text-align: left;
+  line-height: 22px;
+  position: absolute;
+  top: 40%;
+}
 
 .paragraph {
   width: 30vw;
-  position: absolute;
   padding-left: 55%;
   padding-right: 10%;
-  top: 40%;
-  text-align: left;
-  line-height: 22px;
 }
+
 .paragraph-view {
   width: 20vw;
-  position: absolute;
   padding-left: 75%;
   padding-right: 10%;
-  top: 40%;
-  text-align: left;
-  line-height: 22px;
 }
 
 .paragraph-melkweg {
   width: 20vw;
-  position: absolute;
   padding-left: 77%;
   padding-right: 10%;
-  top: 40%;
-  text-align: left;
-  line-height: 22px;
 }
 
-.paragraph-bunker{
+.paragraph-bunker {
   width: 20vw;
-  position: absolute;
   padding-left: 73%;
   padding-right: 10%;
-  top: 40%;
-  text-align: left;
-  line-height: 22px;
 }
 
-.melkweg1{
-  width: 75%;
-}
-.melkweg2{
-  width: 75%;
-}
-.melkweg3{
-  width: 75%;
-}
-.melkweg4{
-  width: 75%;
-}
-.melkweg5{
+/* === IMAGES & MEDIA === */
+.melkweg1,
+.melkweg2,
+.melkweg3,
+.melkweg4,
+.melkweg5 {
   width: 75%;
 }
 
-.gunk1{
-  width: 70%;
+.gunk2,
+.gunk3 {
+  width: 35%;
 }
-.gunk2{
-  width: 40%;
-}
-.gunk3{
-  width: 40%}
 
-.gunk4{
+.gunk4 {
   width: 40%;
   padding-left: 10%;
 }
 
-.gunk7{
-  width: 100%;
-}
-
-.gunk5{
+.gunk5 {
   padding-left: 20%;
 }
 
-.gunk6{
-  width: 40%;
-}
-.gunk8{
-  width: 36%;
-}
+.gunk6 { width: 40%; }
+.gunk7 { width: 100%; }
+.gunk8 { width: 36%; }
+.gunk9,
+.gunk10,
+.gunk11,
+.gunk12 { width: 70%; }
+.gunk13 { width: 100%; }
 
+/* === LAYOUT === */
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
-.gunk9{
-  width: 70%;
-}
-.gunk10{
-  width: 70%;
-}
-.gunk11{
-  width: 70%;
-}
-.gunk12{
-  width: 70%;
-}
-.gunk13{
-  width: 100%;
-}
 
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 35%;
   max-width: 35%;
-  padding: 0 4px;
+  padding: 4px;
   font-size: 11px;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+
+/* === RESPONSIVE === */
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
@@ -230,157 +188,75 @@ ul.expo-links{
   }
 }
 
+@media only screen and (min-width: 801px) {
+  .column { float: left; }
+  .left { width: 40%; padding-right: 0.4%; }
+  .right { width: 30%; }
 
- @media only screen and (min-width: 801px) {
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-}
-.left {
-  width: 40%;
-  padding-right: 0.4%;
-}
-.right {
-  width: 30%;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-  img{
-    width:50%;
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
-  .video{
-    width: 70%;
-  }
-}
 
+  img { width: 50%; }
+  .video { width: 70%; }
+}
 
 @media screen and (max-width: 800px) {
-  .paragraph{
+  .paragraph,
+  .paragraph-view,
+  .paragraph-melkweg,
+  .paragraph-bunker {
     width: 100%;
     position: relative;
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-    .paragraph-view{
-    width: 100%;
-    position: relative;
-    padding-left: 0%;
-    padding-right: 0%;
+    padding: 0;
   }
 
-.paragraph-melkweg{
-    width: 100%;
-    position: relative;
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-
-  .paragraph-bunker{
-    width: 100%;
-    position: relative;
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-
-.menu-container{
+  .menu-container {
     position: relative;
     align-content: center;
-    padding-left: 0%;
-    padding-right: 0%;
+    padding: 0;
+    margin: 0;
   }
 
-  ul.expo-links{
+  ul.expo-links {
     position: relative;
-    top: auto;
-    margin-top: 100px;
+    margin: 100px 0;
     width: 70%;
-    align-content: center;
     padding-left: 10%;
-    margin-bottom: 100px;
   }
 
-  .melkweg1{
+  .melkweg1,
+  .melkweg2,
+  .melkweg3,
+  .melkweg4,
+  .melkweg5,
+  .gunk1,
+  .gunk2,
+  .gunk3,
+  .gunk4,
+  .gunk5,
+  .gunk6,
+  .gunk7,
+  .gunk8,
+  .gunk9,
+  .gunk10,
+  .gunk11,
+  .gunk12,
+  .gunk13,
+  img,
+  .video {
     width: 100%;
+    padding-left: 0;
+    padding-top: 20%;
   }
-  .melkweg2{
-    width: 100%;
-  }
-  .melkweg3{
-    width: 100%;
-  }
-  .melkweg4{
-    width: 100%;
-  }
-  .melkweg5{
-    width: 100%;
-  }
-.gunk1{
-  width: 100%;
-}
-.gunk2{
-  width: 100%;
-}
-.gunk3{
-  width: 100%}
-
-.gunk4{
-  width: 100%;
 }
 
-.gunk7{
-  width: 100%;
-}
-
-.gunk5{
-  width: 100%;
-}
-
-.gunk6{
-  width: 100%;
-}
-.gunk8{
-  width: 100%;
-}
-
-.gunk9{
-  width: 100%;
-}
-.gunk10{
-  width: 100%;
-}
-.gunk11{
-  width: 100%;
-}
-.gunk12{
-  width: 100%;
-}
-.gunk13{
-  width: 100%;
-}
-
-  img{
-    width: 100%;
-  }
-  .video{
-    width: 100%;
-  }
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-.coming-soon{
+/* === COMING SOON === */
+.coming-soon {
   position: absolute;
-  padding-right: 0vw;
-  padding-left: 40vw;
-  padding-top: 20vw;
+  padding: 20vw 0 0 40vw;
   text-align: center;
   color: olivedrab;
-}
 }
