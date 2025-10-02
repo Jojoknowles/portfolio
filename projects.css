@@ -91,7 +91,11 @@ ul.expo-links{
   font-size: 18px;
 }
 
-
+.stair2{
+  height: auto;
+  width: 70vh;
+  padding-left: 35vh;
+}
 
 .paragraph {
 	width: 23vw;
@@ -102,8 +106,11 @@ ul.expo-links{
 	text-align: left;
 	line-height: 22px;
 }
+  img{
+    width:70%;
+  }
 
- @media only screen and (min-width: 801px) {
+ @media only screen and (max-width: 801px) {
 /* Create two unequal columns that floats next to each other */
 .dentist1{
   width: 100%;
@@ -117,6 +124,11 @@ ul.expo-links{
 .dentist4{
   width: 100%;
 }
+.stair2{
+  width: 100%;
+  padding-left: 0%;
+}
+
 .column {
   float: left;
 }
