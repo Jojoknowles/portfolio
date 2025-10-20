@@ -119,6 +119,7 @@ a {text-decoration: none; }
 }
 
 
+
 #toothbrush{
 	height:auto;
 	width:90vh;
@@ -169,6 +170,21 @@ height: auto;
   width: 45vh;
   padding-left: 11vh;
 }
+#table{
+  height:auto;
+  width: 40vh;
+  padding-left: 10vh;
+}
+  #fish2{
+    height: auto;
+    width: 40vh;
+    padding-left: 10vh;
+  }
+
+  #worm{
+    height: auto;
+    width: 40vh;
+  }
 
 	.title{
 	position: absolute;
