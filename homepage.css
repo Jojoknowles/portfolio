@@ -186,6 +186,12 @@ height: auto;
     width: 40vh;
   }
 
+  #cage{
+    padding-left: 10vh;
+    height: auto;
+    width: 45vh;
+  }
+
 	.title{
 	position: absolute;
   	text-align: center;
