@@ -132,8 +132,9 @@ height: auto;
 
 #spit{
   height: auto;
-  width: 35vh;
+  width: 30vh;
   padding-left: 15vh;
+  padding-top: 5vh;
 }
 
 #croissant{
@@ -165,10 +166,10 @@ height: auto;
   padding-left: 5vh;
 }
 
-#grooming{
+#mammal{
   height: auto;
   width: 45vh;
-  padding-left: 11vh;
+  padding-left: 9vh;
 }
 #table{
   height:auto;
@@ -184,6 +185,7 @@ height: auto;
   #worm{
     height: auto;
     width: 40vh;
+    padding-left: 15vh;
   }
 
   #cage{
@@ -192,6 +194,15 @@ height: auto;
     width: 45vh;
   }
 
+  #toast{
+    padding-left: 15vh;
+    padding-top: 5vh;
+    height: auto;
+    width: 50vh;
+  }
+#reddog{
+  padding-top: 10vh;
+}
 	.title{
 	position: absolute;
   	text-align: center;
