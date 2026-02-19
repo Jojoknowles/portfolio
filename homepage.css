@@ -166,10 +166,17 @@ height: auto;
   padding-left: 5vh;
 }
 
-#mammal{
+#mammmal{
   height: auto;
-  width: 45vh;
-  padding-left: 9vh;
+  width: 55vh;
+  padding-left: 5vh;
+}
+
+#man{
+  width: 40vh;
+  height: auto;
+  padding-left: 10vh;
+  padding-top: 5vh;
 }
 #table{
   height:auto;

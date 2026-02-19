@@ -107,6 +107,18 @@ ul.expo-links{
 	line-height: 22px;
 }
 
+.dolphin{
+  width: 35%;
+}
+.swan{
+  width: 31%;
+} 
+.fishman{
+  width: 34%;
+}
+.naked, .rabbit{
+  width: 35%;
+}
   img{
     width:70%;
   }
