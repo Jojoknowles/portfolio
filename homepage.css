@@ -210,6 +210,13 @@ height: auto;
 #reddog{
   padding-top: 10vh;
 }
+
+#pig{
+  height: auto;
+  width: 26vh;
+  padding-left: 20vh;
+}
+
 	.title{
 	position: absolute;
   	text-align: center;
