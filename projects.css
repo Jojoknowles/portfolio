@@ -117,15 +117,26 @@ z-index: 9999;
     height: 100%;
     border: 0;
 }
-.paragraph1 {
+.paragraph {
 	width: 23vw;
 	position: absolute;
 	padding-left: 73%;
   padding-right: 10%;
-	top: 80%;
+	top: 40%;
 	text-align: left;
 	line-height: 22px;
 }
+
+.paragraph1 {
+  width: 23vw;
+  position: absolute;
+  padding-left: 73%;
+  padding-right: 10%;
+  top: 80%;
+  text-align: left;
+  line-height: 22px;
+}
+
 
 .paragraph2 {
   width: 23vw;
