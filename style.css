@@ -63,7 +63,7 @@ main div.grid-container div.item figcaption h3 {
 main div.grid-container div.item a img {
   display: block;
   object-fit: contain;
-  width: 85%;
+  width: 84%;
   aspect-ratio: 1;
 }
 
