@@ -21,6 +21,10 @@ header nav ul li {
   list-style-type: none;
 }
 
+header nav ul li a {
+  text-decoration: none;
+}
+
 main div.grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -52,24 +56,44 @@ main div.grid-container div.item figcaption {
 main div.grid-container div.item figcaption h3 {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1.25vw;
 }
 
 main div.grid-container div.item a img {
   display: block;
   object-fit: contain;
-  width: 92%;
+  width: 85%;
   aspect-ratio: 1;
+}
+
+main div.grid-container div.item:hover figcaption {
+  background-color: yellowgreen;
+  cursor: pointer;
 }
 
 footer {
   margin-top: 40px;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
+  color: grey;
 }
 
 footer div#copyright p {
-  background-color: yellowgreen;
   width: auto;
+}
+
+footer div#email p {
+  width: auto;
+}
+
+footer div#email p a {
+  color: grey;
+}
+
+footer div#email p a:hover {
+  color: -webkit-link;
+  cursor: alias;
 }
 
 
