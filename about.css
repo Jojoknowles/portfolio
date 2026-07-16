@@ -58,6 +58,19 @@ b, strong {
   width: 33%;
 }
 
+.bio{
+  position: relative;
+  padding-top: 3%;
+}
+.text{
+  position: absolute;
+  padding-top: 7%;
+}
+.titles{
+  position: absolute;
+}
+
+
 @media screen and (max-width: 800px) {
 .about-wrapper {
   pointer-events: none;
@@ -67,27 +80,28 @@ b, strong {
   padding-left: 18%;
   padding-top: 70%;
   width: 63%;
+  z-index: 1;
 }
+.bio{
+    position: relative;
+    top:0;
+    z-index: 2;
+  }
 
   .paragraph{
     width: 100%;
     position: relative;
-    padding-left: 0%;
-    padding-right: 0%;
+    top:300px;
+    z-index: 3;
+    padding-top: 200%;
   }
 
   
-  .bio{
-    position: absolute;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 30%;
-  }
   .text{
-  	position: absolute;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 130%;
+  	position: relative;
+    top:1000px;
+    z-index: 4;
+    padding-top: 230%;
   }
 
 }
@@ -110,6 +124,7 @@ b, strong {
 	right: 20%;
 	top:65%;
 	line-height: 35px;
+  color: darkolivegreen;
 }
 
 .titles{
