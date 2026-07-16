@@ -1,0 +1,84 @@
+body {
+  background-color: #faf8ed;
+  padding: 40px;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+header, header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+header nav ul li {
+  margin: 1em;
+  list-style-type: none;
+}
+
+main div.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+main div.grid-container div.item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+main div.grid-container div.item figcaption {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: white;
+  width: auto;
+  height: auto;
+  /* padding: 5px; */
+}
+
+main div.grid-container div.item figcaption h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main div.grid-container div.item a img {
+  display: block;
+  object-fit: contain;
+  width: 92%;
+  aspect-ratio: 1;
+}
+
+footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: start;
+}
+
+footer div#copyright p {
+  background-color: yellowgreen;
+  width: auto;
+}
+
+
+@media screen and (max-width: 944px) {
+
+  div.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+}
