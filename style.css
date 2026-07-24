@@ -5,8 +5,18 @@ body {
   padding-bottom: 20px;
 }
 
+body::-webkit-scrollbar { display: none; }
+
+p, i, b {
+  max-width: 73ch;
+}
+
 header {
   margin-bottom: 40px;
+}
+
+header h1 {
+  font-weight: 300;
 }
 
 header, header nav ul {
@@ -14,15 +24,35 @@ header, header nav ul {
   align-items: center;
   justify-content: space-between;
   height: 10vh;
+  gap: 3em;
 }
 
 header nav ul li {
-  margin: 1em;
   list-style-type: none;
 }
 
 header nav ul li a {
   text-decoration: none;
+  color: black;
+}
+
+header nav ul li a h2 {
+  font-style: normal;
+  font-weight: 300;
+}
+
+header nav ul li a:hover {
+  color: #0000ff;
+}
+
+header nav ul li a#current {
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+}
+
+main {
+  min-height: calc(80vh - 40px - 40px);
 }
 
 main div.grid-container {
@@ -31,7 +61,6 @@ main div.grid-container {
   gap: 10px;
   justify-content: center;
 }
-
 
 main div.grid-container div.item {
   padding: 20px;
@@ -72,6 +101,102 @@ main div.grid-container div.item:hover figcaption {
   cursor: pointer;
 }
 
+main div.context {
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+main div.extra-context {
+  margin-bottom: 40px;
+}
+
+main div.context h3 {
+  background-color: white;
+  width: auto;
+  font-weight: normal;
+}
+
+main div.images {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+main div.images p {
+  max-width: initial;
+}
+
+main div.images img, main div.embed-container iframe {
+  width: 100%;
+  height: auto;
+}
+
+main div.embed-container iframe {
+  width: 100% !important;
+  aspect-ratio: 16/9;
+}
+
+main div.embed-container iframe.square {
+  width: 100% !important;
+  aspect-ratio: 1;
+}
+
+main ul li {
+  margin-bottom: 10px;
+}
+
+main div.jojo {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  max-width: calc(100vw - 8px - 40px - 40px - 8px);
+}
+
+main div.jojo div.portrait img#fish {
+  max-width: calc((100vw - 8px - 40px - 40px - 8px) / 2);
+}
+
+main div.jojo div.promo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: start;
+}
+
+main div.jojo div.promo div.newsletter a#sign-up h3 {
+  display: inline;
+  color: #0000ff;
+  background-color: white;
+}
+
+main div.jojo div.promo div.newsletter a#sign-up h3:hover {
+  background-color: yellowgreen;
+}
+
+main div.about {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  gap: 80px;
+  max-width: calc(100vw - 8px - 40px - 40px - 8px);
+}
+
+main div.about div.info > div {
+  max-width: 63ch;
+}
+
+main div.about div.info {
+  width: calc((100vw - 8px - 40px - 40px - 8px) / 2);
+}
+
+main div.about div.deco img#dolphin {
+  max-width: calc((100vw - 8px - 40px - 40px - 8px) / 4);
+}
+
+main div.jojo h3, main div.about p {
+  margin: 0;
+}
+
 footer {
   margin-top: 40px;
   display: flex;
@@ -99,10 +224,105 @@ footer div#email p a:hover {
 
 @media screen and (max-width: 944px) {
 
-  div.grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+  body {
+    padding: 10px;
   }
 
+  p, i, b {
+    max-width: 75ch;
+  }
+
+  header {
+    display: inline;
+  }
+
+  header nav {
+    font-size: 0.8em;
+  }
+
+  header nav ul {
+    padding: 0;
+    gap: 1.5em;
+  }
+
+  main div.grid-container {
+    display: block;
+  }
+
+  main div.grid-container div.item {
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  main div.grid-container div.item figcaption h3 {
+    font-size: 5vw;
+  }
+
+  main {
+    height: auto; 
+    width: 95vw;
+    min-height: calc(100vh - 146px - 80px - 50px - 51px)
+  }
+
+  main div.exhibitions {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  main div.jojo {
+    display: block;
+    width: 95vw;
+  }
+
+  main div.jojo div.portrait img#fish {
+    max-width: 90vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  main div.jojo div.promo {
+    width: 90vw;
+  }
+
+  main div.jojo div.newsletter {
+    margin-bottom: 10vw;
+  }
+
+  main div.about {
+    display: block;
+    max-width: 95vw;
+
+  }
+
+  main div.about div.info {
+    width: unset;
+    padding: 5px;
+    max-width: 95vw;
+}
+
+  main div.about div.info > div {
+    max-width: unset;
+  }
+
+  div.jojo, div.promo, div.about, div {
+    display: block;
+  }
+
+  main div.about div.deco {
+    max-width: 90vw;
+    height: auto;
+  }
+
+  main div.about div.deco img#dolphin {
+    max-width: 100%;
+    margin-top: 7.5vw;
+  }
+}
+
+@media screen and (max-width: 585px) {
+ 
+  footer {
+    display: block;
+  }
 }
