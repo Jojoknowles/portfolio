@@ -73,13 +73,18 @@ main div.grid-container div.item {
 
 main div.grid-container div.item figcaption {
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: start;
   background-color: white;
   width: auto;
   height: auto;
   /* padding: 5px; */
+}
+
+main div.grid-container div.item figcaption a {
+  text-decoration: none;
+  color: black;
 }
 
 main div.grid-container div.item figcaption h3 {
@@ -97,9 +102,11 @@ main div.grid-container div.item a img {
 }
 
 main div.grid-container div.item:hover figcaption {
-  background-color: yellowgreen;
+  background-color: white;
+  display: flex;
   cursor: pointer;
 }
+
 
 main div.context {
   padding-top: 20px;
@@ -117,8 +124,9 @@ main div.context h3 {
 }
 
 main div.images {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  height: 100%;
+  margin: auto 0;
+  text-align: center;
 }
 
 main div.images p {
@@ -126,8 +134,12 @@ main div.images p {
 }
 
 main div.images img, main div.embed-container iframe {
-  width: 100%;
+  display: block;
+  width: auto;
   height: auto;
+  max-height: 90vh;
+  max-width: 100%;
+  margin: 10vh auto;
 }
 
 main div.embed-container iframe {
@@ -261,8 +273,13 @@ footer div#email p a:hover {
 
   main {
     height: auto; 
-    width: 95vw;
+    max-width: 95vw;
     min-height: calc(100vh - 146px - 80px - 50px - 51px)
+  }
+  
+  main div.images img, main div.embed-container iframe {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
   }
 
   main div.exhibitions {
