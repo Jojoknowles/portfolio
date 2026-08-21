@@ -201,7 +201,7 @@ main div.about div.info {
   width: calc((100vw - 8px - 40px - 40px - 8px) / 2);
 }
 
-main div.about div.deco img#dolphin {
+main div.about div.deco img#goat {
   max-width: calc((100vw - 8px - 40px - 40px - 8px) / 4);
 }
 
