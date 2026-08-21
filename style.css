@@ -201,7 +201,7 @@ main div.about div.info {
   width: calc((100vw - 8px - 40px - 40px - 8px) / 2);
 }
 
-main div.about div.deco img#goat {
+main div.about div.deco img#swan {
   max-width: calc((100vw - 8px - 40px - 40px - 8px) / 4);
 }
 
@@ -331,7 +331,7 @@ footer div#email p a:hover {
     height: auto;
   }
 
-  main div.about div.deco img#dolphin {
+  main div.about div.deco img#swan {
     max-width: 100%;
     margin-top: 7.5vw;
   }
